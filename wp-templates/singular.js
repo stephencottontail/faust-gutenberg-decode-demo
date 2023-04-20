@@ -21,6 +21,7 @@ export default function Component(props) {
     props.data.generalSettings;
   const menuItems = props.data.primaryMenuItems.nodes;
   const { title, editorBlocks } = props.data.nodeByUri;
+	console.log( props.data );
 
   /**
    * Get contentBlocks from props.data and pass them through
@@ -84,7 +85,7 @@ Component.query = gql`
       ... on NodeWithTitle {
         title
       }
-      ... on NodeWithEditorBlocks {
+      ... on Post {
         # Get contentBlocks with flat=true and the nodeId and parentId
         # so we can reconstruct them later using flatListToHierarchical()
         editorBlocks {
