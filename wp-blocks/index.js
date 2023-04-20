@@ -2,6 +2,7 @@ import CoreParagraph from "./CoreParagraph";
 import CoreColumn from "./CoreColumn";
 import CoreColumns from "./CoreColumns";
 import CoreImage from "./CoreImage";
+import FaustGray from "./FaustGray";
 
 /**
  * This object acts as the registry of blocks in your React Gutenberg Bridge.
@@ -11,8 +12,9 @@ import CoreImage from "./CoreImage";
  * @see https://faustjs.org/docs/gutenberg/getting-started
  */
 export default {
-  CoreParagraph,
-  CoreColumn,
-  CoreColumns,
-  CoreImage,
+	CoreParagraph,
+	CoreColumn,
+	CoreColumns,
+	CoreImage,
+	FaustGray
 };
